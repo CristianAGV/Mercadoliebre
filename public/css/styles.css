@@ -70,16 +70,24 @@ body {
 .main-navbar {
   display: none;
 }
+
+.active {
+  display: block;
+}
+
 .main-navbar a {
   text-decoration: none;
   color: #222;
-  font-size: 12px;
-  padding: 8px 0;
+  font-size: 1.1rem;
 }
 
 .left-navbar,
 .right-navbar {
   list-style: none;
+}
+.main-navbar ul li,
+.main-navbar ul li {
+  padding: 10px;
 }
 
 .banner img {
@@ -277,9 +285,14 @@ footer div p {
     display: none;
   }
   .main-navbar {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+  .main-navbar a {
+    font-size: 0.9rem;
+    padding: 10px 0;
   }
   .left-navbar,
   .right-navbar {
@@ -287,6 +300,7 @@ footer div p {
   }
   .main-navbar ul li {
     margin: 0 8px;
+    padding: 0;
   }
 
   section {
@@ -320,9 +334,6 @@ footer div p {
 @media screen and (min-width: 769px) {
   .copy-header {
     max-width: none;
-  }
-  .main-navbar {
-    margin-top: 12px;
   }
 
   .product {
